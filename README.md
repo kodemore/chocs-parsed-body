@@ -1,4 +1,4 @@
-# chocs-parsed-body
+# Chocs - Parsed body middleware <br>[![CI](https://github.com/kodemore/chocs-parsed-body/actions/workflows/main.yaml/badge.svg)](https://github.com/kodemore/chocs-parsed-body/actions/workflows/main.yaml)
 Parsed body middleware for chocs package.
 
 Parsed body middleware helps converting json/yaml data that comes with request into any dataclass. Please consider the following example:
