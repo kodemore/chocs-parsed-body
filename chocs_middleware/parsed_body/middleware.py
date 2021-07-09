@@ -4,7 +4,7 @@ from typing import Any
 from chili import is_dataclass, init_dataclass
 from chocs import HttpRequest
 from chocs import HttpResponse
-from chocs.middleware import Middleware, MiddlewareHandler
+from chocs.middleware.middleware import Middleware, MiddlewareHandler
 from chocs.routing import Route
 
 

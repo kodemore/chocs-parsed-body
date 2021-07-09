@@ -1,13 +1,15 @@
 [tool.poetry]
-name = "chocs-parsed-body"
-version = "1.0.0b0"
-description = "This middleware changes behaviour of HttpRequest.parsed_body."
+name = "chocs_middleware.parsed_body"
+version = "1.0.0"
+description = "This middleware changes behaviour of chocs.HttpRequest.parsed_body."
 authors = [
     "Dawid Kraczkowski <dawid.kraczkowski@gmail.com>"
 ]
 license = "MIT"
 readme = "README.md"
-
+packages = [
+  { include = "chocs_middleware" }
+]
 homepage = "https://github.com/kodemore/chocs-parsed-body"
 repository = "https://github.com/kodemore/chocs-parsed-body"
 documentation = "https://github.com/kodemore/chocs-parsed-body"
@@ -33,7 +35,6 @@ python = "^3.7"
 typing_extensions = "^3.7.4"
 chocs = "^1.0.0-beta.0"
 chili = "^1.0.0-beta.0"
-
 
 [tool.poetry.dev-dependencies]
 pytest = "^4.1.0"

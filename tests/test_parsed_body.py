@@ -4,7 +4,7 @@ from dataclasses import dataclass
 import pytest
 from chocs import Application, HttpMethod, HttpRequest, HttpResponse
 
-from chocs_parsed_body.middleware import ParsedBodyMiddleware
+from chocs_middleware.parsed_body import ParsedBodyMiddleware
 
 
 @dataclass
