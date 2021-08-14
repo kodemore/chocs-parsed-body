@@ -4,9 +4,9 @@ Parsed body middleware for chocs package.
 Parsed body middleware helps converting json/yaml data that comes with request into any dataclass. Please consider the following example:
 
 ```python
-from middleware import ParsedBodyMiddleware
-from chocs_middleware import Application, HttpRequest, HttpResponse
-from chocs_middleware import asdict
+from chocs_middleware.parsed_body import ParsedBodyMiddleware
+from chocs import Application, HttpRequest, HttpResponse
+from chili import asdict
 from dataclasses import dataclass
 import json
 
@@ -36,8 +36,8 @@ is simply unpacked and passed to your dataclass, so you have to manually transfo
 nested data to dataclasses in order to conform your dataclass interface, for example:
 
 ```python
-from chocs_middleware import ParsedBodyMiddleware
-from chocs_middleware import Application, HttpRequest, HttpResponse
+from chocs_middleware.parsed_body import ParsedBodyMiddleware
+from chocs import Application, HttpRequest, HttpResponse
 from dataclasses import dataclass
 from typing import List
 
